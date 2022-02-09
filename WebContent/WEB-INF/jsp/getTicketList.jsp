@@ -26,5 +26,6 @@ for (String[] s: list){
 {"ID":5,"OptName":"チャーハン無料券","POINT":1500},
 ]
 
+
  --%>
 
