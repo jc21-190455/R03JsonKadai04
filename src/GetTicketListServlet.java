@@ -17,6 +17,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 
 /**
+ * 
  * Servlet implementation class GetPointServlet
  */
 @WebServlet("/GetTicketList")
