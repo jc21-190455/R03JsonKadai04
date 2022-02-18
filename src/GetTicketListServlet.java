@@ -13,6 +13,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import javax.servlet.ServletException;
 
 /**
  * Servlet implementation class GetPointServlet
@@ -51,7 +53,7 @@ public class GetTicketListServlet extends HttpServlet {
 
 			PreparedStatement st = connection.prepareStatement(
 					"select TICKET_ID,TICKET_NAME,POINT from ticket where TICKET_ID=? AND TICKET_NAME=? AND POINT=?");
-//select文変更した
+			//select文変更した
 
 			String ticketid = request.getParameter("TICKET_ID");
 			String namae = request.getParameter("TICKET_NAME");
@@ -100,11 +102,15 @@ public class GetTicketListServlet extends HttpServlet {
 			RequestDispatcher gt = request.getRequestDispatcher("/WEB-INF/jsp/getTicketList.jsp");
 			gt.forward(request, response);
 		} catch (ClassNotFoundException e) {
-// TODO 自動生成された catch ブロック１
-			e.printStackTrace(response.getWriter());
+			// TODO 自動生成された catch ブロック１
+			e.printStackTrace(response.getWriter());	
 		} catch (SQLException e) {
-// TODO 自動生成された catch ブロック
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace(response.getWriter());
+		} catch (ServletException e) {
+			// TODO 自動生成された catch ブロック
 			e.printStackTrace(response.getWriter());
 		}
+		
 	}
 }
