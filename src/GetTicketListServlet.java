@@ -98,7 +98,7 @@ public class GetTicketListServlet extends HttpServlet {
 			RequestDispatcher gt = request.getRequestDispatcher("/WEB-INF/JSP/getTicket.jsp");
 			gt.forward(request, response);
 		} catch (ClassNotFoundException e) {
-// TODO 自動生成された catch ブロックa
+// TODO 自動生成された catch ブロックaa
 			e.printStackTrace();
 		} catch (SQLException e) {
 // TODO 自動生成された catch ブロック
