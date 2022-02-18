@@ -88,7 +88,7 @@ public class GetPointServlet extends HttpServlet {
 // TODO 自動生成された catch ブロック
 			e.printStackTrace(response.getWriter());
 		} catch (SQLException e) {
-// TODO 自動生成された catch ブロック
+// TODO 自動生成された catch ブロック１・２７
 			e.printStackTrace(response.getWriter());
 		}
 	}
