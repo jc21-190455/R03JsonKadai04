@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 
- * Servlet implementation class GetPointServlet
+ * Servlet implementation class GetPointServleta
  */
 @WebServlet("/getTicketList")
 public class GetTicketListServlet extends HttpServlet {
