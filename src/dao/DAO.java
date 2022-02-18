@@ -80,3 +80,4 @@ public class DAO {
 		return point;
 	}
 }
+
