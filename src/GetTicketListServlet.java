@@ -15,7 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class GetPointServlet
+ * 
+ * Servlet implementation class GetPointServleta
  */
 @WebServlet("/getTicketList")
 public class GetTicketListServlet extends HttpServlet {
@@ -27,7 +28,7 @@ public class GetTicketListServlet extends HttpServlet {
 	public GetTicketListServlet() {
 		super();
 
-// TODO Auto-generated constructor stub
+// TODO Auto-generated constructor stubq
 	}
 
 	/**
@@ -97,7 +98,7 @@ public class GetTicketListServlet extends HttpServlet {
 			RequestDispatcher gt = request.getRequestDispatcher("/WEB-INF/JSP/getTicket.jsp");
 			gt.forward(request, response);
 		} catch (ClassNotFoundException e) {
-// TODO 自動生成された catch ブロック
+// TODO 自動生成された catch ブロックaa
 			e.printStackTrace();
 		} catch (SQLException e) {
 // TODO 自動生成された catch ブロック
